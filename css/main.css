@@ -2471,7 +2471,7 @@ html.no-csstransitions .home-content__main {
 
 .description_service {
   font-family: "metropolis-regular", serif;
-  font-size: large;
+  font-size: larger;
   width: 75%;
   min-width: 350px;
   color: #fff;
