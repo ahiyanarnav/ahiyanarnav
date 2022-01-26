@@ -2605,7 +2605,7 @@ html.no-csstransitions .home-content__main {
   display: flex;
   width: max-content;
   overflow: visible;
-  animation: bannermove 5s linear infinite;
+  animation: bannermove 15s linear infinite;
 }
 
 .clients-div:hover {
