@@ -44,6 +44,7 @@ html {
 
 :root {
   --dark-orange: #fb6f0e !important;
+  --primary-color: #fefce3 !important;
 }
 
 * {
@@ -850,8 +851,8 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-  background-color: #b8b8b8;
-  border-color: #b8b8b8;
+  /*background-color: #b8b8b8;*/
+  /*border-color: #b8b8b8;*/
   color: #000000;
   outline: 0;
 }
@@ -1383,8 +1384,8 @@ input::-moz-focus-inner {
 
 #mc-form input[type="submit"]:hover {
   color: black;
-  background-color: #c5c5c5;
-  border-color: #c5c5c5;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
   transform: scale(1.1);
 }
 
@@ -2383,18 +2384,35 @@ html.no-csstransitions .home-content__main {
   position: sticky;
   top: 0;
   background-color: #fefce3;
-  box-shadow: var(--dark-orange);
+  box-shadow: 0 0 30px #8c0001;
   width: 100%;
   margin: 0;
   z-index: 950;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
 }
 
-.main-navbar > input {
-  background-color: var(--dark-orange);
+.main-navbar > img {
+  height: 5.5rem;
+  margin-right: 1rem;
+  background-color: transparent !important;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.main-navbar > img:hover {
+  transform: scale(1.15);
+  background-color: transparent !important;
+}
+
+.main-navbar > input:hover {
+  color: white !important;
+  background-color: #8c0001 !important;
+}
+
+.main-navbar > .navigation_button {
+  border-radius: 3rem;
 }
 
 .services-div {
@@ -2439,9 +2457,9 @@ html.no-csstransitions .home-content__main {
 }
 
 .services_button:hover {
-  background-color: #c5c5c5 !important;
+  background-color: var(--primary-color) !important;
   color: black !important;
-  border-color: #c5c5c5 !important;
+  border-color: var(--primary-color) !important;
   transform: scale(1.1);
 }
 
@@ -2452,12 +2470,13 @@ html.no-csstransitions .home-content__main {
   border-color: var(--dark-orange) !important;
   margin-right: 0.8rem !important;
   margin-left: 0.8rem !important;
+  border-radius: 0.5rem;
 }
 
 .navigation_button:hover {
-  background-color: #c5c5c5 !important;
+  background-color: var(--primary-color) !important;
   color: black !important;
-  border-color: #c5c5c5 !important;
+  border-color: var(--primary-color) !important;
   transform: scale(1.1);
 }
 
@@ -2586,7 +2605,7 @@ html.no-csstransitions .home-content__main {
   display: flex;
   width: max-content;
   overflow: visible;
-  animation: bannermove 15s linear infinite;
+  animation: bannermove 5s linear infinite;
 }
 
 .clients-div:hover {
@@ -2632,10 +2651,10 @@ html.no-csstransitions .home-content__main {
 
 @keyframes bannermove {
   0% {
-    transform: translateX(calc(27.4% / 2));
+    transform: translateX(calc(42% / 2));
   }
   100% {
-    transform: translateX(calc(-72.6% / 2));
+    transform: translateX(calc(-59% / 2));
   }
 }
 
