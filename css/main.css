@@ -2681,3 +2681,17 @@ html.no-csstransitions .home-content__main {
   width: 100px;
   margin: 20px;
 }
+
+.div_location {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.div_location img {
+  height: 150px;
+}
+
+.div_location p {
+  margin-left: 20px;
+}
