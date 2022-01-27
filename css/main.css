@@ -41,6 +41,49 @@
 html {
   font-size: 10px;
 }
+/* =================================================================== 
+ *
+ *  Count v1.0 Main Stylesheet
+ *  04-16-2018
+ *  ------------------------------------------------------------------
+ *
+ *  TOC:
+ *  # base style overrides
+ *    ## links
+ *  # typography & general theme styles
+ *    ## lists
+ *    ## responsive video container
+ *    ## floated image
+ *    ## tables
+ *    ## Spacing
+ *    ## pace.js styles - minimal
+ *  # preloader
+ *  # forms
+ *    ## style placeholder text
+ *    ## change autocomplete styles in chrome
+ *  # buttons
+ *  # additional components
+ *    ## additional typo styles
+ *  # home
+ *    ## home slides
+ *    ## home particles 
+ *    ## site logo
+ *    ## home content
+ *    ## home social
+ *    ## home copyright
+ *    ## home animations
+ *  # info
+ *    ## info toggle
+ *
+ * =================================================================== */
+
+/* ===================================================================
+ * # base style overrides - (_document-setup.scss)
+ *
+ * ------------------------------------------------------------------- */
+html {
+  font-size: 10px;
+}
 
 :root {
   --dark-orange: #fb6f0e !important;
@@ -48,7 +91,7 @@ html {
 }
 
 * {
-  scroll-behavior: smooth;
+  scroll-behavior: revert;
 }
 
 @media only screen and (max-width: 400px) {
@@ -2068,7 +2111,7 @@ html.no-csstransitions .home-content__main {
   height: 1px;
   background-color: var(--dark-orange);
   position: absolute;
-  left: 3px;
+  left: 45%;
   top: -3.6rem;
 }
 
@@ -2423,7 +2466,6 @@ html.no-csstransitions .home-content__main {
   height: 100%;
   background-color: #111111;
   padding: 0 0 0rem;
-  /*padding: 21rem 0 9rem;*/
   -webkit-transform: translateX(50%);
   -ms-transform: translateX(50%);
   transform: translateX(50%);
@@ -2560,10 +2602,6 @@ html.no-csstransitions .home-content__main {
 }
 
 .card_service:hover {
-  /*box-shadow: 0 0 8px 0 rgba(255, 255, 255, 0.2),*/
-  /*0 0 20px 0 rgba(255, 255, 255, 0.19);*/
-  /*border-radius: 1rem;*/
-  /*cursor: pointer;*/
   transform: scale(1.01);
   box-shadow: 0 0 20px var(--dark-orange);
 }
@@ -2605,7 +2643,7 @@ html.no-csstransitions .home-content__main {
   display: flex;
   width: max-content;
   overflow: visible;
-  animation: bannermove 15s linear infinite;
+  animation: bannermove 90s linear infinite;
 }
 
 .clients-div:hover {
@@ -2716,40 +2754,47 @@ html.no-csstransitions .home-content__main {
   margin-bottom: 0;
 }
 
+.our-team {
+  text-align: center;
+}
+
 .team-div {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+  justify-content: space-evenly;
   margin-bottom: 2rem;
+  flex-flow: wrap-reverse;
+  flex-direction: row-reverse;
 }
 
 .team-card {
   margin: 1rem 1rem;
-  /*width: 10vw;*/
+  width: 20rem;
 }
 
 .team-card p {
   text-align: center;
   margin: 0;
-  color: rgba(255,255,255,0.75);
+  color: white;
+  font-size: 1.5rem;
 }
 
 .team-extra {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
-.team-extra li p{
-  color: rgba(255,255,255,0.75);
+.team-extra li p {
+  color: rgba(255, 255, 255, 0.75);
   margin: 0;
 }
 
 .team-name {
-  color: white !important;
-  font-size: 2rem;
+  color: var(--dark-orange) !important;
+  font-size: 2rem !important;
+  font-weight: bolder;
 }
 
 .team-image {
   border-radius: 50%;
-  /*height: 10vw;*/
 }
-
