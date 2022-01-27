@@ -116,7 +116,7 @@
 
     let navigationButton = () => {
         $('.navigation_button').on('click', (e) => {
-            $('#services-page')[0].scrollTop += $(e.target.getAttribute('data-to')).offset().top - 150;
+            $('#services-page')[0].scrollTop += $(e.target.getAttribute('data-to')).offset().top - $('.main-navbar')[0].offsetHeight - 50;
         })
     }
 

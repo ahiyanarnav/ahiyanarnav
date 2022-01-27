@@ -2167,7 +2167,6 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 .info-toggle {
   z-index: 502;
-  background-color: #000000;
   border: 1px solid rgba(255, 255, 255, 0.12);
   font-family: "metropolis-medium", sans-serif;
   font-size: 12px;
@@ -2395,7 +2394,7 @@ html.no-csstransitions .home-content__main {
 
 .main-navbar > img {
   height: 5.5rem;
-  margin-right: 1rem;
+  margin-right: 1.5rem !important;
   background-color: transparent !important;
   cursor: pointer;
   transition: all 0.2s ease-in;
@@ -2432,6 +2431,7 @@ html.no-csstransitions .home-content__main {
   overflow-x: hidden;
   -webkit-transition: transform 0.7s cubic-bezier(0.86, 0.01, 0.77, 0.78);
   transition: transform 0.7s cubic-bezier(0.86, 0.01, 0.77, 0.78);
+  padding-bottom: 3rem;
 }
 
 .service-is-visible .services-div {
@@ -2704,6 +2704,7 @@ html.no-csstransitions .home-content__main {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  align-items: center;
 }
 
 .div_location img {
@@ -2712,4 +2713,43 @@ html.no-csstransitions .home-content__main {
 
 .div_location p {
   margin-left: 20px;
+  margin-bottom: 0;
 }
+
+.team-div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.team-card {
+  margin: 1rem 1rem;
+  /*width: 10vw;*/
+}
+
+.team-card p {
+  text-align: center;
+  margin: 0;
+  color: rgba(255,255,255,0.75);
+}
+
+.team-extra {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-extra li p{
+  color: rgba(255,255,255,0.75);
+  margin: 0;
+}
+
+.team-name {
+  color: white !important;
+  font-size: 2rem;
+}
+
+.team-image {
+  border-radius: 50%;
+  /*height: 10vw;*/
+}
+
