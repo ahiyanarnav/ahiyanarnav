@@ -1297,7 +1297,7 @@ input::-moz-focus-inner {
 .home-content h3::before {
   content: "";
   display: block;
-  background-color: rgba(236, 0, 140, 0.6);
+  background-color: var(--dark-orange);
   width: 40px;
   height: 1px;
   position: absolute;
@@ -2066,7 +2066,7 @@ html.no-csstransitions .home-content__main {
   content: "";
   width: 80px;
   height: 1px;
-  background-color: rgba(236, 0, 140, 0.6);
+  background-color: var(--dark-orange);
   position: absolute;
   left: 3px;
   top: -3.6rem;
