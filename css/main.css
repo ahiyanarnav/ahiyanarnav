@@ -2689,10 +2689,10 @@ html.no-csstransitions .home-content__main {
 
 @keyframes bannermove {
   0% {
-    transform: translateX(calc(42% / 2));
+    transform: translateX(calc(45.5% / 2));
   }
   100% {
-    transform: translateX(calc(-59% / 2));
+    transform: translateX(calc(-55% / 2));
   }
 }
 
