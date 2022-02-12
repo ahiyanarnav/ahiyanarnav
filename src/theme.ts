@@ -1,6 +1,6 @@
+import { colors } from "@mui/material";
 import { orange } from "@mui/material/colors";
 import { createTheme } from "@mui/material/styles";
-import { useGlobalStyles } from "./globalStyles";
 
 let ORANGE = { ...orange, 500: "#fb6f0e" };
 const theme = createTheme({
@@ -8,6 +8,9 @@ const theme = createTheme({
     primary: {
       main: ORANGE[500],
       contrastText: "white",
+    },
+    text: {
+      primary: colors.blueGrey[200],
     },
   },
   components: {
@@ -22,6 +25,13 @@ const theme = createTheme({
           borderRadius: 0,
           height: 41,
           marginTop: 1,
+        },
+      },
+    },
+    MuiTypography: {
+      styleOverrides: {
+        h4: {
+          color: "white",
         },
       },
     },
