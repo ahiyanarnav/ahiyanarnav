@@ -1,11 +1,11 @@
-import { Button, Typography } from "@mui/material";
-import StyledButton from "../../atoms/StyledButton";
+import { Button, Typography, Grid } from "@mui/material";
+import LandingSearchBar from "../../molecules/LandingSearchBar";
 
 const LandingPage = () => {
   return (
     <>
-      <Typography variant="h2">Welcome to the Ahiyan Arnav</Typography>
-      <Button>Notify Me</Button>
+      <Typography variant="h4">Welcome to the Ahiyan Arnav</Typography>
+      <LandingSearchBar />
     </>
   );
 };

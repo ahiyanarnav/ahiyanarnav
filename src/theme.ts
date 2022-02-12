@@ -16,6 +16,15 @@ const theme = createTheme({
         variant: "contained",
       },
     },
+    MuiOutlinedInput: {
+      styleOverrides: {
+        root: {
+          borderRadius: 0,
+          height: 41,
+          marginTop: 1,
+        },
+      },
+    },
   },
 });
 
