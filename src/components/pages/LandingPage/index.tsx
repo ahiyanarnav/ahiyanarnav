@@ -1,6 +1,5 @@
-import { Button, Typography, Grid, Container, Slide, Box } from "@mui/material";
+import { Grid } from "@mui/material";
 import { makeStyles } from "@mui/styles";
-import LandingSearchBar from "../../molecules/LandingSearchBar";
 import RepublicImage from "../../../assets/images/33_Republicday.jpg";
 import LandingPageContent from "../../organisms/LandingPageContent";
 import LandingPageTitle from "../../atoms/LandingPageTitle";
@@ -23,7 +22,7 @@ const LandingPage = () => {
       <Grid container>
         <LandingPageNavbar />
       </Grid>
-      <Grid xs={6} xl={5} margin="auto" marginTop={"10%"}>
+      <Grid xs={6} xl={5} margin="auto" marginTop="10%">
         <LandingPageTitle />
         <LandingPageContent />
       </Grid>

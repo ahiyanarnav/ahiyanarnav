@@ -1,12 +1,11 @@
-import "./App.css";
+import { Route, Routes } from "react-router-dom";
 import LandingPage from "./components/pages/LandingPage";
 
-function App() {
-  return (
-    <>
-      <LandingPage />
-    </>
-  );
-}
+const App = () => (
+  <Routes>
+    <Route path="/" element={<LandingPage />} />
+    <Route path="*" element={<LandingPage />} />
+  </Routes>
+);
 
 export default App;
