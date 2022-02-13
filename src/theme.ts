@@ -1,8 +1,7 @@
 import { colors } from "@mui/material";
-import { orange } from "@mui/material/colors";
 import { createTheme } from "@mui/material/styles";
+import { ORANGE } from "./Colors";
 
-let ORANGE = { ...orange, 500: "#fb6f0e" };
 const theme = createTheme({
   palette: {
     primary: {

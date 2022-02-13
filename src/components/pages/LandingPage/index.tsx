@@ -1,8 +1,10 @@
-import { Button, Typography, Grid, Container } from "@mui/material";
+import { Button, Typography, Grid, Container, Slide, Box } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import LandingSearchBar from "../../molecules/LandingSearchBar";
 import RepublicImage from "../../../assets/images/33_Republicday.jpg";
 import LandingPageContent from "../../organisms/LandingPageContent";
+import LandingPageTitle from "../../atoms/LandingPageTitle";
+import LandingPageNavbar from "../../molecules/LandingPageNavbar";
 
 const useStyles = makeStyles({
   root: {
@@ -11,9 +13,6 @@ const useStyles = makeStyles({
     height: "100vh",
     maxWidth: "100vw !important",
     backgroundSize: "cover",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
   },
 });
 
@@ -21,7 +20,11 @@ const LandingPage = () => {
   const classes = useStyles();
   return (
     <Grid className={classes.root}>
-      <Grid lg={6} xl={5} >
+      <Grid container>
+        <LandingPageNavbar />
+      </Grid>
+      <Grid xs={6} xl={5} margin="auto" marginTop={"10%"}>
+        <LandingPageTitle />
         <LandingPageContent />
       </Grid>
     </Grid>

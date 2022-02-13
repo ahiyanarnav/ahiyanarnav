@@ -11,7 +11,6 @@ const useStyles = makeStyles({
 });
 
 const LandingSearchBar = () => {
-  const classes = useStyles();
   const globalClasses = useGlobalStyles();
   return (
     <>
