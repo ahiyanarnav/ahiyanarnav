@@ -5,6 +5,6 @@ export const useGlobalStyles = makeStyles({
     color: "white",
   },
   square: {
-    borderRadius: "0px",
+    borderRadius: "0px !important",
   },
 });

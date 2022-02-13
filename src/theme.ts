@@ -28,9 +28,39 @@ const theme = createTheme({
         },
       },
     },
+    MuiInput: {
+      styleOverrides: {
+        input: {
+          "&::placeholder": {
+            color: "white !important",
+          },
+        },
+      },
+    },
     MuiTypography: {
       styleOverrides: {
+        h1: {
+          color: "white",
+        },
+        h2: {
+          color: "white",
+        },
+        h3: {
+          color: "white",
+        },
         h4: {
+          color: "white",
+        },
+        h5: {
+          color: "white",
+        },
+        h6: {
+          color: "white",
+        },
+        subtitle1: {
+          color: "grey",
+        },
+        subtitle2: {
           color: "white",
         },
       },
