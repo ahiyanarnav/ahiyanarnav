@@ -1,6 +1,5 @@
 import { Button, Grid, Typography } from "@mui/material";
 import { makeStyles } from "@mui/styles";
-import LandingPageTitle from "../../atoms/LandingPageTitle";
 import LandingSearchBar from "../../molecules/LandingSearchBar";
 
 const useStyles = makeStyles({

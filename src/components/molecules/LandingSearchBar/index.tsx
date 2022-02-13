@@ -1,14 +1,5 @@
 import { Button, Grid, TextField } from "@mui/material";
-import { useGlobalStyles } from "../../../globalStyles";
-import { makeStyles } from "@mui/styles";
-
-const useStyles = makeStyles({
-  input: {
-    "&::placeholder": {
-      color: "white",
-    },
-  },
-});
+import useGlobalStyles from "../../../globalStyles";
 
 const LandingSearchBar = () => {
   const globalClasses = useGlobalStyles();

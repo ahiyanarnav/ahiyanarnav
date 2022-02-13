@@ -1,6 +1,6 @@
 import { makeStyles } from "@mui/styles";
 
-export const useGlobalStyles = makeStyles({
+const useGlobalStyles = makeStyles({
   whiteText: {
     color: "white",
   },
@@ -8,3 +8,5 @@ export const useGlobalStyles = makeStyles({
     borderRadius: "0px !important",
   },
 });
+
+export default useGlobalStyles;
