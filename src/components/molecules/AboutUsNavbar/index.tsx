@@ -1,16 +1,16 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { Grid, IconButton, Typography } from "@mui/material";
-import { MenuOpen } from "@mui/icons-material";
+import { Close } from "@mui/icons-material";
 import { useNavigate } from "react-router-dom";
-import { ABOUT_US } from "../../../shared/routes";
+import { HOME } from "../../../shared/routes";
 import LandingLogo from "../../atoms/LangingLogo";
 
-const LandingPageNavbar = () => {
+const AboutUsNavbar = () => {
   const navigate = useNavigate();
 
-  const onMoreInfoClick = () => {
-    navigate(ABOUT_US);
+  const onCloseClick = () => {
+    navigate(HOME);
   };
-
   return (
     <>
       <Grid item sm={8} padding={3} paddingLeft={8}>
@@ -19,11 +19,11 @@ const LandingPageNavbar = () => {
           edge="start"
           color="primary"
           disableRipple
-          onClick={onMoreInfoClick}
+          onClick={onCloseClick}
         >
-          <MenuOpen />
+          <Close />
           <Typography variant="subtitle2" color="primary">
-            MORE INFO
+            Close
           </Typography>
         </IconButton>
       </Grid>
@@ -32,4 +32,4 @@ const LandingPageNavbar = () => {
   );
 };
 
-export default LandingPageNavbar;
+export default AboutUsNavbar;
