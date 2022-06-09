@@ -5,4 +5,4 @@ export default {
   component: LandingPageTitle,
 };
 
-export const Searchbar = () => <LandingPageTitle />;
+export const Searchbar = () => <LandingPageTitle text="Welcome" />;
