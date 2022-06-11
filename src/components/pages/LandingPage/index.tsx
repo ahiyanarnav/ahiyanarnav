@@ -22,8 +22,8 @@ const LandingPage = () => {
       <Grid container>
         <LandingPageNavbar />
       </Grid>
-      <Grid xs={6} xl={5} margin="auto" marginTop="10%">
-        <LandingPageTitle />
+      <Grid xs={6} xl={5} margin="auto" marginTop="5%">
+        <LandingPageTitle text="Welcome To Ahiyan Arnav" />
         <LandingPageContent />
       </Grid>
     </Grid>
