@@ -1,5 +1,7 @@
 import { Button, Grid, Typography } from "@mui/material";
 import { makeStyles } from "@mui/styles";
+import { useNavigate } from "react-router-dom";
+import { WHAT_WE_DO } from "../../../shared/routes";
 import LandingSearchBar from "../../molecules/LandingSearchBar";
 
 const useStyles = makeStyles({
@@ -14,6 +16,12 @@ const useStyles = makeStyles({
 
 const LandingPageContent = () => {
   const classes = useStyles();
+  const navigate = useNavigate();
+
+  const onInfoButtonClick = () => {
+    navigate(WHAT_WE_DO);
+  };
+
   return (
     <>
       <Typography variant="h2" sx={{ fontWeight: 500 }} gutterBottom>
@@ -28,7 +36,9 @@ const LandingPageContent = () => {
       <Grid sm={12} className={classes.searchBar}>
         <LandingSearchBar />
       </Grid>
-      <Button size="large">What we do</Button>
+      <Button size="large" onClick={onInfoButtonClick}>
+        What we do
+      </Button>
     </>
   );
 };
