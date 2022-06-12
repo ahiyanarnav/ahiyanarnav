@@ -42,6 +42,7 @@
     transition: background var(--tspeed) ease-in-out;
     font-size: var(--rm-font-size);
     z-index: 1;
+    width: 100%;
   }
   
   #_2iAdU * {

@@ -8,3 +8,8 @@ export interface ProfileProps {
   education?: string;
   profilePic: string;
 }
+
+export interface TabPropType {
+  key: string;
+  label: string;
+}
