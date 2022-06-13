@@ -12,4 +12,7 @@ export interface ProfileProps {
 export interface TabPropType {
   key: string;
   label: string;
+  description: string;
+  image: string;
+  imageSide?: "left" | "right";
 }

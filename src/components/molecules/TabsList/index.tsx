@@ -4,7 +4,7 @@ import { TabPropType } from "../../../shared/types";
 
 interface TabListsProps {
   tabsData: TabPropType[];
-  currentTab: string;
+  currentTab: TabPropType;
   onHandleTabChange: (_: React.SyntheticEvent, newValue: string) => void;
 }
 
@@ -13,7 +13,7 @@ const TabsList: React.FC<TabListsProps> = ({
   currentTab,
   onHandleTabChange,
 }) => (
-  <Tabs value={currentTab} onChange={onHandleTabChange} variant="fullWidth">
+  <Tabs value={currentTab.key} onChange={onHandleTabChange} variant="fullWidth">
     {tabsData.map((tab) => (
       <Tab
         value={tab.key}
