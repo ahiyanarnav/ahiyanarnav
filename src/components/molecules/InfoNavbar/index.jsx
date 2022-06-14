@@ -12,10 +12,11 @@ import {
 import { useNavigate } from "react-router-dom";
 import Logo from "../../../assets/images/logo-main.png";
 import {
-  CLIENTS_INFO,
-  PRODUCTS_INFO,
+  CLIENTS_URL,
+  PROCESS_URL,
+  PRODUCTS_URL,
   SERVICES_INFO,
-  TECHNOLOGY_INFO,
+  TECHNOLOGY_URL,
 } from "../../../shared/routes";
 
 const InfoNavbar = () => {
@@ -32,7 +33,7 @@ const InfoNavbar = () => {
           icon: faDatabase,
           isAuth: true,
           onClick: () => {
-            navigate(TECHNOLOGY_INFO);
+            navigate(TECHNOLOGY_URL);
           },
         },
         {
@@ -48,7 +49,7 @@ const InfoNavbar = () => {
           icon: faListSquares,
           isAuth: true,
           onClick: () => {
-            navigate(PRODUCTS_INFO);
+            navigate(PRODUCTS_URL);
           },
         },
         {
@@ -56,7 +57,7 @@ const InfoNavbar = () => {
           icon: faUsers,
           isAuth: true,
           onClick: () => {
-            navigate(CLIENTS_INFO);
+            navigate(CLIENTS_URL);
           },
         },
         {
@@ -64,7 +65,7 @@ const InfoNavbar = () => {
           icon: faProjectDiagram,
           isAuth: true,
           onClick: () => {
-            navigate(TECHNOLOGY_INFO);
+            navigate(PROCESS_URL);
           },
         },
       ]}

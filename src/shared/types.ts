@@ -16,3 +16,9 @@ export interface TabPropType {
   image: string;
   imageSide?: "left" | "right";
 }
+
+export interface ProcessCardProps {
+  title: string;
+  description: string;
+  image: string;
+}

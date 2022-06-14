@@ -8,14 +8,16 @@ import {
   TECHNOLOGY_TABS_DATA,
 } from "../../../shared/data/tabsData";
 import {
-  TECHNOLOGY_INFO,
+  TECHNOLOGY_URL,
   SERVICES_INFO,
-  PRODUCTS_INFO,
-  CLIENTS_INFO,
+  PRODUCTS_URL,
+  CLIENTS_URL,
+  PROCESS_URL,
 } from "../../../shared/routes";
 import InfoNavbar from "../../molecules/InfoNavbar";
 import InfoNavLinkComp from "../../organisms/InfoComp/InfoNavLinkComp";
 import OurClients from "../../organisms/InfoComp/OurClients";
+import ProcessComp from "../../organisms/InfoComp/ProcessComp";
 
 const useStyles = makeStyles({
   infoNavbar: { position: "fixed", width: "100%" },
@@ -38,7 +40,7 @@ const InfoPage = () => {
       </Grid>
       <Grid item className={classes.root}>
         <Grid item paddingTop={10} container alignItems="start">
-          {tab === TECHNOLOGY_INFO && (
+          {tab === TECHNOLOGY_URL && (
             <InfoNavLinkComp
               title="Technologies"
               tabsData={TECHNOLOGY_TABS_DATA}
@@ -47,10 +49,11 @@ const InfoPage = () => {
           {tab === SERVICES_INFO && (
             <InfoNavLinkComp title="Services" tabsData={SERVICES_TABS_DATA} />
           )}
-          {tab === PRODUCTS_INFO && (
+          {tab === PRODUCTS_URL && (
             <InfoNavLinkComp title="Products" tabsData={PRODUCTS_TABS_DATA} />
           )}
-          {tab === CLIENTS_INFO && <OurClients />}
+          {tab === CLIENTS_URL && <OurClients />}
+          {tab === PROCESS_URL && <ProcessComp />}
         </Grid>
       </Grid>
     </Grid>

@@ -1,7 +1,7 @@
 import { Button, Grid, Typography } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import { useNavigate } from "react-router-dom";
-import { TECHNOLOGY_INFO } from "../../../shared/routes";
+import { TECHNOLOGY_URL } from "../../../shared/routes";
 import LandingSearchBar from "../../molecules/LandingSearchBar";
 
 const useStyles = makeStyles({
@@ -19,7 +19,7 @@ const LandingPageContent = () => {
   const navigate = useNavigate();
 
   const onInfoButtonClick = () => {
-    navigate(TECHNOLOGY_INFO);
+    navigate(TECHNOLOGY_URL);
   };
 
   return (

@@ -31,7 +31,7 @@ const AboutUsContent = () => {
         and customer experience.
       </Typography>
       <Grid item container justifyContent="center" xs={6}>
-        <hr className={classes.orangeLine} color="orange" />
+        <hr className={classes.orangeLine} color="#fb6f0e" />
       </Grid>
       <ProfileComp />
     </>

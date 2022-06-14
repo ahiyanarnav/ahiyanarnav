@@ -24,7 +24,7 @@ const LandingPageTitle: React.FC<LandingPageProps> = ({ text }) => {
         justifyContent={text ? "start" : "center"}
         xs={text ? 1 : 6}
       >
-        <hr style={{ width: "50%" }} color="orange" />
+        <hr style={{ width: "50%" }} color="#fb6f0e" />
       </Grid>
       <Grid item xs={8}>
         <Typography variant="h6">{text}</Typography>
