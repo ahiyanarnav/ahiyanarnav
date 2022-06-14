@@ -1,12 +1,16 @@
 import { Grid, Typography } from "@mui/material";
-import { useState } from "react";
-import technologyTabsData from "../../../../shared/data/tabsData";
+import React, { useState } from "react";
 import { TabPropType } from "../../../../shared/types";
 import TabInfoCard from "../../../molecules/TabInfoCard";
 import TabsList from "../../../molecules/TabsList";
 
-const TechnologyComp = () => {
-  const tabs: TabPropType[] = technologyTabsData;
+interface InfoNavLinkProps {
+  title: string;
+  tabsData: TabPropType[];
+}
+
+const InfoNavLinkComp: React.FC<InfoNavLinkProps> = ({ tabsData, title }) => {
+  const tabs: TabPropType[] = tabsData;
   const [currentTab, setCurrentTab] = useState(tabs[0]);
 
   const onHandleTabChange = (_: React.SyntheticEvent, newValue: string) => {
@@ -18,7 +22,7 @@ const TechnologyComp = () => {
   return (
     <>
       <Grid item xs={12} container justifyContent="center" height={56}>
-        <Typography variant="h3">Technologies</Typography>
+        <Typography variant="h3">{title}</Typography>
       </Grid>
       <Grid item xs={12} margin={5}>
         <TabsList
@@ -38,4 +42,4 @@ const TechnologyComp = () => {
   );
 };
 
-export default TechnologyComp;
+export default InfoNavLinkComp;

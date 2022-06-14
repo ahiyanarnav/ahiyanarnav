@@ -2,9 +2,10 @@ import { Grid } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
+import technologyTabsData from "../../../shared/data/tabsData";
 import { TECHNOLOGY_INFO } from "../../../shared/routes";
 import InfoNavbar from "../../molecules/InfoNavbar";
-import TechnologyComp from "../../organisms/InfoComp/TechnologyComp";
+import InfoNavLinkComp from "../../organisms/InfoComp/InfoNavLinkComp";
 
 const useStyles = makeStyles({
   infoNavbar: { position: "fixed", width: "100%" },
@@ -22,7 +23,12 @@ const InfoPage = () => {
       </Grid>
       <Grid item className={classes.root}>
         <Grid item paddingTop={10} container alignItems="start">
-          {tab === TECHNOLOGY_INFO && <TechnologyComp />}
+          {tab === TECHNOLOGY_INFO && (
+            <InfoNavLinkComp
+              title="Technologies"
+              tabsData={technologyTabsData}
+            />
+          )}
         </Grid>
       </Grid>
     </Grid>

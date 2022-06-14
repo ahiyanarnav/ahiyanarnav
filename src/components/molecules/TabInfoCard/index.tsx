@@ -19,7 +19,7 @@ const useStyles = makeStyles({
   },
   container: {
     backgroundColor: "black",
-    borderRadius: 15,
+    borderRadius: 25,
     margin: "15px !important",
     border: "0.5px solid #fb6f0e",
   },
