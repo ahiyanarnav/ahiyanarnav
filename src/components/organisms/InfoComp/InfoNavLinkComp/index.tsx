@@ -1,6 +1,7 @@
-import { Grid, Typography } from "@mui/material";
+import { Grid } from "@mui/material";
 import React, { useState } from "react";
 import { TabPropType } from "../../../../shared/types";
+import InfoTitle from "../../../atoms/InfoTitle";
 import TabInfoCard from "../../../molecules/TabInfoCard";
 import TabsList from "../../../molecules/TabsList";
 
@@ -21,9 +22,7 @@ const InfoNavLinkComp: React.FC<InfoNavLinkProps> = ({ tabsData, title }) => {
 
   return (
     <>
-      <Grid item xs={12} container justifyContent="center" height={56}>
-        <Typography variant="h3">{title}</Typography>
-      </Grid>
+      <InfoTitle title={title} />
       <Grid item xs={12} margin={5}>
         <TabsList
           tabsData={tabs}

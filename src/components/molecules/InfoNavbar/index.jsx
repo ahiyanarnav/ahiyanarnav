@@ -12,6 +12,7 @@ import {
 import { useNavigate } from "react-router-dom";
 import Logo from "../../../assets/images/logo-main.png";
 import {
+  CLIENTS_INFO,
   PRODUCTS_INFO,
   SERVICES_INFO,
   TECHNOLOGY_INFO,
@@ -55,7 +56,7 @@ const InfoNavbar = () => {
           icon: faUsers,
           isAuth: true,
           onClick: () => {
-            navigate(TECHNOLOGY_INFO);
+            navigate(CLIENTS_INFO);
           },
         },
         {

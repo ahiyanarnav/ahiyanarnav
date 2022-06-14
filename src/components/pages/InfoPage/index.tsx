@@ -11,9 +11,11 @@ import {
   TECHNOLOGY_INFO,
   SERVICES_INFO,
   PRODUCTS_INFO,
+  CLIENTS_INFO,
 } from "../../../shared/routes";
 import InfoNavbar from "../../molecules/InfoNavbar";
 import InfoNavLinkComp from "../../organisms/InfoComp/InfoNavLinkComp";
+import OurClients from "../../organisms/InfoComp/OurClients";
 
 const useStyles = makeStyles({
   infoNavbar: { position: "fixed", width: "100%" },
@@ -48,6 +50,7 @@ const InfoPage = () => {
           {tab === PRODUCTS_INFO && (
             <InfoNavLinkComp title="Products" tabsData={PRODUCTS_TABS_DATA} />
           )}
+          {tab === CLIENTS_INFO && <OurClients />}
         </Grid>
       </Grid>
     </Grid>
