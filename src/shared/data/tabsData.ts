@@ -1,9 +1,18 @@
 import { TabPropType } from "../types";
+
 import IOT from "../../assets/images/Info/Technologies/iot.png";
 import BLOCKCHAIN from "../../assets/images/Info/Technologies/block_chain.jpeg";
 import RPA from "../../assets/images/Info/Technologies/rpa.jpeg";
 
-const technologyTabsData: TabPropType[] = [
+import WM from "../../assets/images/Info/Services/app_dev.jpeg";
+import DM from "../../assets/images/Info/Services/seo.png";
+import EM from "../../assets/images/Info/Services/event1.jpeg";
+import OPD from "../../assets/images/Info/Services/outsourced-product-development.png";
+
+import DP from "../../assets/images/Info/Products/poulty.jpeg";
+import YS from "../../assets/images/Info/Products/yoskool.png";
+
+export const TECHNOLOGY_TABS_DATA: TabPropType[] = [
   {
     key: "iot",
     label: "IOT",
@@ -34,4 +43,81 @@ const technologyTabsData: TabPropType[] = [
     image: BLOCKCHAIN,
   },
 ];
-export default technologyTabsData;
+
+export const SERVICES_TABS_DATA: TabPropType[] = [
+  {
+    key: "W&M",
+    description: `We provide a comprehensive range of Android and IOS mobile application, E-commerce application development services that enable enterprises to exploit the power of custom applications to support new capabilities and enhance the customer and partner experience.
+
+  We work with our clients to understand their business and devise customized solutions that maximize application availability, agility and predictability resulting in Lower costs, less risk, greater ROI, a faster response to market opportunities and the support our clients need to achieve their long-term objectives.
+  
+  Application Services are core to our strategy. We at SS cater selected verticals like Financial Services, Manufacturing, Retail & Consumer, Media & Entertainment, Life Sciences & Healthcare and other emerging verticals.`,
+    image: WM,
+    label: "Web & Mobile Application Development",
+  },
+  {
+    key: "DMS",
+    description: `We provide a comprehensive range of custom application development services that enable enterprises to exploit the power of custom applications to support new capabilities and enhance the customer and partner experience.
+
+  We work with our clients to understand their business and devise customized solutions that maximize application availability, agility and predictability resulting in Lower costs, less risk, greater ROI, a faster response to market opportunities and the support our clients need to achieve their long-term objectives.`,
+    image: DM,
+    label: "Digital Marketing Services",
+    imageSide: "right",
+  },
+  {
+    key: "EM",
+    description: `We provide Events as a full service, lifestyle based, professional event planning company that specializes in corporate events, dinner galas, fundraisers, long service awards, grand openings, conferences and private events.
+
+  We love details! And our commitment is to see each event through from start to finish while keeping the goals, vision, budget and client's needs in mind at all times. We are committed to following through on every detail so you don't have to. From a 1000 person dinner gala to a small intimate private party or meeting, Our Events has experienced it all.`,
+    image: EM,
+    label: "Event Management",
+  },
+  {
+    key: "OPD",
+    description: `We provide a comprehensive range of custom application development services that enable enterprises to exploit the power of custom applications to support new capabilities and enhance the customer and partner experience.
+
+  We work with our clients to understand their business and devise customized solutions that maximize application availability, agility and predictability resulting in Lower costs, less risk, greater ROI, a faster response to market opportunities and the support our clients need to achieve their long-term objectives.
+  
+  Application Services are core to our strategy. We at SS cater selected verticals like Financial Services, Manufacturing, Retail & Consumer, Media & Entertainment, Life Sciences & Healthcare and other emerging verticals.`,
+    image: OPD,
+    label: "Outsourced Product Development",
+    imageSide: "right",
+  },
+];
+
+export const PRODUCTS_TABS_DATA: TabPropType[] = [
+  {
+    key: "DP",
+    description: `DigiPoultry is our solution aimed to provide a 360° monitoring, visibility, control and data driven intelligence to the poultry sector. The solution is envisaged to evolve to handling all operations end to end such as:
+
+    Poultry Environment Management
+    Poultry Operations Management
+    Poultry Water Management
+    Data Driven Operations Automation
+    The application is available on Desktop as well as Mobile Platforms and provides:
+    
+    Live Data Monitoring
+    Alarms, Alerts & Notifications
+    Chick Weight Monitoring
+    Feed Tracking
+    Calculation of Feed Conversion Ratio
+    Complete Operations Tracking
+    Reporting & Intelligence`,
+    image: DP,
+    label: "Digi Poultry",
+  },
+  {
+    key: "YS",
+    description: `YOSKOOL is a third party application we involve in marketing and sales.
+
+    YOSKOOL is a great solution to all schools, colleges and any other academic institutes where these business entities to manage their operations over digital platform on Real-time.
+    
+    YOSKOOL functioning is avoiding the gap between the management, administrators, teachers and students/parents and providing all modules services under single umbrella.
+    
+    We are here for a very simple reason – to be the differentiator in redefining how schools are managed in the present and how to protect you in the future from the onslaught of technical advancements which is inevitable. A simple next gen fully automated ERP that can withstand future uncertainties with simple up gradations as an when required.
+    
+    Enhancing further YOSKOOL defined system of service delivery which is hands on and timely through our QRT (Quick response team) seamlessly achieve academic excellence with our one-on-one learning program that prioritizes deep understanding of concepts`,
+    image: YS,
+    label: "YOSKOOL(SALES)",
+  },
+];

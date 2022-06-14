@@ -1,9 +1,17 @@
 import { Grid } from "@mui/material";
 import { makeStyles } from "@mui/styles";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
-import technologyTabsData from "../../../shared/data/tabsData";
-import { TECHNOLOGY_INFO } from "../../../shared/routes";
+import {
+  PRODUCTS_TABS_DATA,
+  SERVICES_TABS_DATA,
+  TECHNOLOGY_TABS_DATA,
+} from "../../../shared/data/tabsData";
+import {
+  TECHNOLOGY_INFO,
+  SERVICES_INFO,
+  PRODUCTS_INFO,
+} from "../../../shared/routes";
 import InfoNavbar from "../../molecules/InfoNavbar";
 import InfoNavLinkComp from "../../organisms/InfoComp/InfoNavLinkComp";
 
@@ -14,7 +22,12 @@ const useStyles = makeStyles({
 
 const InfoPage = () => {
   const location = useLocation();
-  const tab = useState(location.pathname)[0];
+  const [tab, setTab] = useState("");
+
+  useEffect(() => {
+    setTab(location.pathname);
+  }, [location]);
+
   const classes = useStyles();
   return (
     <Grid container xs={12}>
@@ -26,8 +39,14 @@ const InfoPage = () => {
           {tab === TECHNOLOGY_INFO && (
             <InfoNavLinkComp
               title="Technologies"
-              tabsData={technologyTabsData}
+              tabsData={TECHNOLOGY_TABS_DATA}
             />
+          )}
+          {tab === SERVICES_INFO && (
+            <InfoNavLinkComp title="Services" tabsData={SERVICES_TABS_DATA} />
+          )}
+          {tab === PRODUCTS_INFO && (
+            <InfoNavLinkComp title="Products" tabsData={PRODUCTS_TABS_DATA} />
           )}
         </Grid>
       </Grid>

@@ -9,6 +9,7 @@ const useStyles = makeStyles({
     width: "75%",
     height: "auto",
     border: "3px solid white",
+    backgroundColor: "white",
   },
   title: {
     color: "white",
@@ -37,7 +38,7 @@ const TabInfoCard: React.FC<TabPropType> = ({
   return (
     <Grid item container>
       <Grid item container justifyContent="center" xs={12}>
-        <Typography variant="h3" className={classes.title}>
+        <Typography variant="h4" className={classes.title}>
           {label}
         </Typography>
       </Grid>

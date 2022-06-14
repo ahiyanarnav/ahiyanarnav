@@ -11,6 +11,7 @@ const navItems = [
     title: "Technology",
     icon: faDatabase,
     isAuth: true,
+    onClick: () => {},
   },
   {
     title: "Services",
