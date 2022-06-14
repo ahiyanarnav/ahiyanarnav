@@ -20,9 +20,7 @@ const useStyles = makeStyles({
   container: {
     backgroundColor: "black",
     borderRadius: 15,
-    marginLeft: 10,
-    marginRight: 10,
-    marginBottom: 10,
+    margin: "15px !important",
     border: "0.5px solid #fb6f0e",
   },
 });
