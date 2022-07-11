@@ -36,7 +36,7 @@ const PROCESS_DATA: ProcessCardProps[] = [
   {
     title: "5. Quality Assurance",
     description:
-      "Hyperlink values quality and provides 100% bug free application with no compromisation in it.",
+      "Ahiyan Arnav values quality and provides 100% bug free application with no compromisation in it.",
     image: IMG_5,
   },
   {
